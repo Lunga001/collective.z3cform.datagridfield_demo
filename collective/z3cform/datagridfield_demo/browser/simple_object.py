@@ -116,7 +116,24 @@ class GridDataConverter(grok.MultiAdapter, BaseDataConverter):
 
 #-------------[ Views Follow ]-------------------------------------------
 
+class AddForm(form.AddForm):
+    def __init__(self):
+        import pdb; pdb.set_trace()
+
+    def __call__(self):
+        import pdb; pdb.set_trace()
+
+    label = u'Simple Form (Objects)'
+
+    grok.context(IPerson)
+
 class EditForm(form.EditForm):
+    def __init__(self):
+        import pdb; pdb.set_trace()
+
+    def __call__(self):
+        import pdb; pdb.set_trace()
+
     label = u'Simple Form (Objects)'
 
     grok.context(Interface)

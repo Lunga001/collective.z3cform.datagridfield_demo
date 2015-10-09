@@ -13,4 +13,12 @@
     <!-- Grok the package to initialise schema interfaces and content classes -->
     <grok:grok package="." />
 
+    <genericsetup:registerProfile
+      name="default"
+      title="DataGridField Demo"
+      directory="profiles/default"
+      description="Extension profile for DataGridField"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>
